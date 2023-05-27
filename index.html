@@ -6,33 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge Encriptador - Oracle</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div id="logo">
-            <img src="./assets/img/Vector-logo.png" alt="logoAlura" id="logo-img">
-        </div>
+        <img class="logo" src="./assets/img/Vector-logo.png" alt="Logo de Alura">
     </header>
     <main>
-        <section class="request-text">
-            <p>Ingrese el texto:</p>
-            <input type="text" name="encriptador" id="encriptador">
-        </section>
-        <p>Solo letras minúsculas y mayúsculas</p>
-        <button id="buttonEncript">Encriptar</button>
-        <button id="buttonDescript">Desencriptar</button>
         <section>
-            <div id="rectangle1">
-                <div id="noTextFound">
-                    <p>Ningún mensaje fue encontrado</p>
-                </div>
-                <div id="#requetsToDescript">
-                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-                </div>
+            <textarea class="text-area" cols="70%" rows="10" placeholder="Ingrese el texto:"></textarea>
+            <div>
+                <h6 class="alert">Solo letras minúsculas y mayúsculas</h6>
+            </div>
+            <div class="buttons">
+                <button class="button-encript">Encriptar</button>
+                <button class="button-descript">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="text-result" cols="30%" rows="10"></textarea>
+            <div>
+                <button class="copiar">Copiar</button>
+            </div>
+            <img class="img-muneco" src="./assets/img/Muneco.png" alt="No se encuentra texto">
+            
+            <div class="no-text">
+                <p>Ningún mensaje fue encontrado</p>
+            </div>
+            <div class="enter-text">
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
         </section>        
     </main>
-    <footer><p>Franco Lapalma</p></footer>
+    <footer>
+        <p>Franco Lapalma</p>
+    </footer>
     <script src="encriptador.js"></script>
 </body>
 </html>
