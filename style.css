@@ -88,6 +88,11 @@ section textarea{
     cursor: pointer;
 }
 
+.button-encript:hover{
+    color: #052051;
+    background-color: #356EA9;
+}
+
 .button-descript{
     background:#D8DFE8;
     color: #0A3871;
@@ -98,6 +103,11 @@ section textarea{
     cursor: pointer;
 }
 
+.button-descript:hover{
+    color: #052051;
+    background-color: #868E96;
+}
+
 .button-copy{
     background-color: #FFFFFF;
     color: #0A3871;
@@ -105,9 +115,13 @@ section textarea{
     border-radius: 24px;
     width: 300px;
     height: 67px;
-    cursor: pointer;
-    margin-left: 2em;
-    margin-top: 0.5em;
+    cursor: pointer;    
+    margin-top: 400px;
+}
+
+.button-copy:hover{
+    color: #343A40;
+    background-color: #609ED4;
 }
 
 .no-text{
@@ -147,9 +161,9 @@ footer p {
     }
     .text-area {
         display: flex;
-        margin: 2em;
-        height: 250px;
-        width: 670px;
+        padding: 1em;
+        height: 300px;
+        width: 690px;
     }
     .results{
         display: flex;
@@ -158,19 +172,22 @@ footer p {
         margin-top: 1em;
         margin-left: 0;
         padding: 2em;
-        height: 3em;
+        height: 30%;
         width: 80%;
     }
     
     .text-result{
-        display: none;
+        width: 700PX;
+        height: 100px;
         background-color: none;
         background-image: none;
     }    
+
     .no-text{
         background-color: #FFFFFF;
         margin:0;
     }
+
     .no-text p{
         background-color: #FFFFFF;
         font-size: 25px;
@@ -184,6 +201,10 @@ footer p {
         background-color: #FFFFFF;
         font-size: 15px;
         font-style: italic;
+    }
+
+    .button-copy{
+        margin:0;
     }
 }
 
@@ -199,8 +220,9 @@ footer p {
     }
     .text-area {
         display: flex;
-        margin: 0em;
-        height: 350px;
+        margin: 0;
+        height: auto;
+        width: 300px;
     }
     
     .buttons{
@@ -217,15 +239,16 @@ footer p {
         background-color: #FFFFFF;
         margin-top: 1em;
         padding: 2em;
-        height: 4em;
-        width: 80%;
+        height: auto;
+        width: 60%;
     }
     
     .text-result{
-        display: none;
+        height: 100px;
         background-color: none;
         background-image: none;
-    }    
+    }   
+    
     .no-text{
         text-align: center;
         background-color: #FFFFFF;

@@ -1,5 +1,8 @@
 const textArea = document.querySelector(".text-area");
 const mensaje = document.querySelector(".text-result");
+const textoOculto1 = document.querySelector (".no-text"); 
+const textoOculto2 = document.querySelector (".enter-text");
+const btnCopiar = document.querySelector (".button-to-copy");
 
 // La letra "e" es convertida para "enter"
 // La letra "i" es convertida para "imes"
@@ -8,10 +11,12 @@ const mensaje = document.querySelector(".text-result");
 // La letra "u" es convertida para "ufat"
 
 function buttonEncriptar(){
-    const textoEncriptado = encriptar(textArea.value)
+    const textoEncriptado = encriptar(textArea.value)    
     mensaje.value= textoEncriptado
     textArea.value= "";
     mensaje.style.backgroundImage = "none";
+    textoOculto1.style.display="none";
+    textoOculto2.style.display="none";
 }
 
 function encriptar(stringEncriptado){
@@ -46,5 +51,6 @@ function desencriptar(stringDesencriptado){
 
 function buttonCopiar () {
     const textoACopiar = mensaje.value 
-    navigator.clipboard.writeText(textoACopiar);    
+    navigator.clipboard.writeText(textoACopiar);
+    mensaje.value= "";    
 }
